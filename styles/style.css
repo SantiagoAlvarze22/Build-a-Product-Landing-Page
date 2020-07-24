@@ -15,10 +15,14 @@
     text-decoration: none;
     background: #eee;
 }
+body, html{
+    overflow-x: hidden;
+}
 
 
 body{
     font-family: sans-serif;
+    
 }
 #header{
     width: 100%;
@@ -63,8 +67,7 @@ nav{
 .content{
     width: 90%;
     text-align: center;
-    padding: 7vh;
-    
+    padding: 7vh 0px;
 }
 
 .content h2{
@@ -176,7 +179,7 @@ nav{
 }
 
 #footer{
-    width: 80%;
+    width:80%;
     margin: 0px auto;
     height: 70px;
     background: rgb(219, 219, 219);
@@ -204,4 +207,37 @@ footer p {
     font-size: 14px;
     background: transparent;
     line-height: 25px;
+}
+
+@media (max-width:1325px){
+    #footer{
+        width:100%;
+    }
+
+    .content input[type="submit"]{
+        margin: 10px auto;
+    }
+
+}
+
+@media (max-width:965px){
+    #header{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #header img{
+        padding-top: 3vh;
+        margin:0px auto;
+    }
+
+    #header ul {
+        width: 100vw;
+        text-align: center;
+    }
+
 }
