@@ -10,7 +10,7 @@
 }
 
 *{
-    margin:0px;
+    margin:0px auto;
     padding: 0px;
     text-decoration: none;
     background: #eee;
@@ -22,11 +22,12 @@ body{
 }
 #header{
     width: 100%;
-    height: 5vh;
+    height: 7vh;
     display:flex;
     position: fixed;
+    align-items: center;
     justify-content: space-between;
-    margin: 30px 0px;
+    margin: 0px 0px;
 }
 
 #header img{
@@ -37,16 +38,26 @@ body{
 
 #header ul li{
     display: inline-block;
+    
     margin-right: 30px;
 }
 
 
 #header ul li a{
-    display: inline-block;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    height: 50px;
     margin-right: 50px;
     color: #444;
     font-size: 1.3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 300ms;
+}
+
+#header ul li:hover a{
+    display: flex;
+    text-shadow: 1px 1px 2px #444, 1px 1px 1px #444;
 }
 
 .content{
@@ -76,7 +87,7 @@ body{
 
 .content input[type="submit"]{
     margin: 15px auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-weight: bold;
     font-size: 16px;
     width: 12%;
@@ -85,6 +96,43 @@ body{
     background: #f1c40f;
     cursor: pointer;
 }
-.icon{
-    font-family: "WebSymbolsRegular";
+#features{
+    width: 90%;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
 }
+#features #feature1, #feature2, #feature3{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
+
+}
+
+#features #feature1::before{
+    margin-right: 70px;
+    color: darkorange;
+    content:"." ;
+    font-family: "WebSymbolsRegular";
+    font-size: 30px;
+}
+
+#features #feature2::before{
+    margin-right:85px;
+    color: darkorange;
+    content:"?" ;
+    font-family: "WebSymbolsRegular";  
+    font-size: 30px;
+}
+
+#features #feature3::before{
+    margin-right: 70px;
+    color: darkorange;
+    content:"L" ;
+    font-family: "WebSymbolsRegular";
+    font-size: 30px;
+}
+
