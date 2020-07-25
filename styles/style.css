@@ -237,7 +237,52 @@ footer p {
 
     #header ul {
         width: 100vw;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
+    #header ul li a{
+        text-align: center;
+        width: auto;
+    }
+
+}
+
+@media (max-width:795px){
+    #pricing{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price{
+        margin: 40px 0px;
+    }
+    #features #feature1::before{
+        margin-right: 70px;
+        font-size: 50px;
+    }
+
+    #features #feature2::before{
+        margin-right: 95px;
+        font-size: 50px;
+    }
+    #features #feature3::before{
+        margin-right: 70px;
+        font-size: 50px;
+    }
+
+    #video{
+        width: 90%;
+        margin: 0px auto;
+    }
+}
+
+@media (max-width:550px){
+    #video iframe{
+        width: 450px;
+        height: 350px;
+        margin: 0px auto;
+    }
 }
