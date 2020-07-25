@@ -208,6 +208,7 @@ footer p {
     font-size: 14px;
     background: transparent;
     line-height: 25px;
+    margin-right: 50px;
 }
 
 @media (max-width:1325px){
