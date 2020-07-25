@@ -277,12 +277,37 @@ footer p {
         width: 90%;
         margin: 0px auto;
     }
+    #footer ul li a {
+        font-size: 19px;
+    }
 }
 
 @media (max-width:550px){
+
+    #features h2{
+        font-size: 30px;
+    }
+    #features p{
+        font-size: 20px;
+    }
+
+    #features #feature1::before{
+        content: none;
+    }
+    #features #feature2::before{
+        content: none;
+    }
+    #features #feature3::before{
+        content: none;
+    }
+
     #video iframe{
         width: 450px;
         height: 350px;
         margin: 0px auto;
+    }
+
+    #footer ul li a {
+        font-size: 19px;
     }
 }
