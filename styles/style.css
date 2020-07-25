@@ -350,8 +350,7 @@ footer p {
     }
     
     #header .nav-link  a {
-       margin-right: 0px;
-
+       margin: 0px 0px;
     }
 
     #video iframe{
