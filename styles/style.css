@@ -341,12 +341,19 @@ footer p {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
+        margin: 0px auto;
+        justify-content: center;
     }
 
     .content .form-wrap {
         margin-top: 150px;
     }
     
+    #header .nav-link  a {
+       margin-right: 0px;
+
+    }
+
     #video iframe{
         width: 100%;
         height: 30vh;
