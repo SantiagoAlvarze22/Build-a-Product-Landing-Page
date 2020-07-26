@@ -101,10 +101,9 @@ nav{
     transition: all 500ms;
 }
 
-.content input[type="submit"]:hover{
-    background: #f1970f;
-    cursor: pointer;
-    border-radius: 122px;
+.content input[type="submit"]:focus{
+    outline: 2px solid  #f1970f;
+    outline-offset: 5px;
 }
 
 #features{
