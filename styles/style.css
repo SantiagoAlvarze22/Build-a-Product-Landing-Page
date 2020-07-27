@@ -18,12 +18,12 @@
 body, html{
     overflow-x: hidden;
     background: #eee;
+    scroll-behavior: smooth; 
 }
 
 
 body{
     font-family: sans-serif;
-    
 }
 #header{
     width: 100%;
